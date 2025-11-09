@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item ENDERIUM_INGOT = registerItem("enderium_ingot", new Item(new Item.Settings() .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LazersEnd.MOD_ID,"enderium_ingot")))));
 
+    public static final Item ENDERIUM_SCRAP = registerItem("enderium_scrap", new Item(new Item.Settings() .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LazersEnd.MOD_ID,"enderium_scrap")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LazersEnd.MOD_ID, name), item);
     }
@@ -23,6 +25,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
             entries.add(ENDERIUM_INGOT);
+            entries.add(ENDERIUM_SCRAP);
         });
     }
 }
