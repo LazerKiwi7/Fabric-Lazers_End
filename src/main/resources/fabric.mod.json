@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lazers_end",
+	"version": "${version}",
+	"name": "Lazer's End",
+	"description": "Funny little end update I made",
+	"authors": [
+		"LazerKiwi7"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lazers_end/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lazerkiwi7.lazers_end.LazersEnd"
+		],
+		"fabric-datagen": [
+			"net.lazerkiwi7.lazers_end.LazersEndDataGenerator"
+		],
+      "client": [
+        "net.lazerkiwi7.lazers_end.LazersEndClient"
+      ]
+	},
+	"mixins": [
+		"lazers_end.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
