@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "lazers_end:item/enderium_ingot"
+  }
+}

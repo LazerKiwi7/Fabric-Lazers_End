@@ -2,6 +2,7 @@ package net.lazerkiwi7.lazers_end;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.lazerkiwi7.lazers_end.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class LazersEnd implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
